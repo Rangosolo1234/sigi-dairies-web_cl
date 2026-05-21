@@ -13,7 +13,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="p-8" v-if="cow">
+  <div class="p-24" v-if="cow">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
       <!-- Image -->
