@@ -9,7 +9,7 @@ export interface Cow {
   available: boolean
 }
 
-// MOCK DATA (temporary until Django is ready)
+// MOCK DATA - temporary
 const cows: Cow[] = [
   {
     id: 1,
@@ -31,12 +31,74 @@ const cows: Cow[] = [
     image: "https://images.unsplash.com/photo-1596733430284-f7437764b1a9",
     available: true,
   },
+  {
+    id: 3,
+    name: "Friesian King",
+    breed: "Friesian",
+    age: 5,
+    weight: 610,
+    price: 145000,
+    image: "https://images.unsplash.com/photo-1500595046743-cd271d694d30",
+    available: true,
+  },
+  {
+    id: 4,
+    name: "Ayrshire Beauty",
+    breed: "Ayrshire",
+    age: 2,
+    weight: 390,
+    price: 85000,
+    image: "https://images.unsplash.com/photo-1516467508483-a7212febe31a",
+    available: true,
+  },
+  {
+    id: 5,
+    name: "Brown Swiss Max",
+    breed: "Brown Swiss",
+    age: 6,
+    weight: 700,
+    price: 175000,
+    image: "https://images.unsplash.com/photo-1560114928-40f1f1eb26a0",
+    available: false,
+  },
+  {
+    id: 6,
+    name: "Guernsey Pearl",
+    breed: "Guernsey",
+    age: 3,
+    weight: 460,
+    price: 102000,
+    image: "https://images.unsplash.com/photo-1589923188900-85dae523342b",
+    available: true,
+  },
+  {
+    id: 7,
+    name: "Sahiwal Prime",
+    breed: "Sahiwal",
+    age: 4,
+    weight: 500,
+    price: 118000,
+    image: "https://images.unsplash.com/photo-1527153857715-3908f2bae5e8",
+    available: true,
+  },
+  {
+    id: 8,
+    name: "Dairy Champion",
+    breed: "Holstein",
+    age: 5,
+    weight: 630,
+    price: 160000,
+    image: "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e",
+    available: false,
+  },
 ]
 
 export const getCows = async (): Promise<Cow[]> => {
   return cows
 }
 
-export const getCowById = async (id: number): Promise<Cow | undefined> => {
-  return cows.find(cow => cow.id === id)
+export const getCowById = async (
+  id: number
+): Promise<Cow | undefined> => {
+  return cows.find((cow) => cow.id === id)
 }
