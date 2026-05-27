@@ -25,6 +25,7 @@ const closeMenu = () => {
       <!-- Desktop Links -->
       <div class="hidden md:flex gap-6 items-center">
         <router-link to="/" class="hover:text-orange">Home</router-link>
+        <router-link to="/about"  class="hover:text-orange transition duration-300">About</router-link>
         <router-link to="/cows" class="hover:text-orange">Cows</router-link>
         <router-link to="/transport" class="hover:text-orange">Transport</router-link>
         <router-link to="/contact" class="hover:text-orange">Contact</router-link>
