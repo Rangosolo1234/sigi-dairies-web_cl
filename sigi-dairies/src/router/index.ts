@@ -4,6 +4,7 @@ import Home from "../views/Home.vue"
 import About from "../views/About.vue"
 import Cows from "../views/Cows.vue"
 import CowDetails from "../views/CowDetails.vue"
+import Transport from "../views/Transport.vue"
 import Contact from "../views/Contact.vue"
 
 const routes = [
@@ -26,6 +27,10 @@ const routes = [
     path: "/cows/:id",
     name: "CowDetails",
     component: CowDetails,
+  },
+  {
+    path: "/transport",
+    component: Transport,
   },
   {
       path: "/contact",
